@@ -20,3 +20,6 @@ jobs:
       - name: Run Scripts
         run: |
           ././build-postgres-multiplatform.sh 14 linux/amd64
+        env:
+          DEBEZIUM_DOCKER_REGISTRY_PRIMARY_NAME: localhost:5500/debezium
+          DEBEZIUM_DOCKER_REGISTRY_SECONDARY_NAME: localhost:5500/debeziumquay
